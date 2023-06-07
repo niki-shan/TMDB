@@ -1,0 +1,79 @@
+:root{
+    --primary-col:#22254b;
+    --secondary-col:#373b69;
+}
+
+body{
+    background-color: var(--secondary-col);
+}
+
+.header{
+    padding:20px;
+    background-color: var(--primary-col);
+    border:transparent;
+    margin-bottom: 20PX;
+}
+
+.logo{
+    color:#fff;
+    font-size: 30px;
+    border: transparent;
+    margin-left: 40px;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+input::placeholder{
+    font-size: 20px;
+}
+
+.imdbcard figure{
+    height:550px;
+    width: 550px;
+}
+.imdbcard{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+ .imdbcard figcaption{
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    width: 100%;
+    color:#fff;
+    background-color: var(--primary-col);
+    font-size: 20px;
+}
+
+.overview{
+    position:absolute;
+    left:0;
+    bottom:0;
+    background-color: #fff;
+    padding:20px;
+    max-height: 75%;
+    overflow: auto;
+    transform: translatey(500px);
+    transition: all 0.4 ease-in-out;
+    width:100%;
+    font-size: 23px;
+
+}
+
+.imdbcard:hover .overview{
+    transform: translatey(0px);
+}
+
+
